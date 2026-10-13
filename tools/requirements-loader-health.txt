@@ -14,4 +14,4 @@ akshare>=1.17,<2
 ccxt>=4,<5
 baostock==0.9.3
 mootdx==0.11.7
-pykrx>=1.0,<2
+pykrx>=1.2.9,<2
