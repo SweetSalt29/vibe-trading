@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-21T05:40:00.000Z" agent="Antigravity AI" version="24.0.0" type="device">
+  <diagram id="vibe-trading-india-arch" name="Vibe Trading - India Edition">
+    <mxGraphModel dx="1600" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1350" background="#0d1117" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hdr_title" parent="1" value="&lt;b&gt;VIBE TRADING — INDIA EDITION ARCHITECTURE&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#58a6ff;fontSize=24;fontStyle=1;fontFamily=Segoe UI;" vertex="1">
+          <mxGeometry x="450" y="30" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr_sub" parent="1" value="Autonomous Multi-Agent Quant &amp; Algorithmic Trading Platform (NSE / BSE / F&amp;O / Zerodha / Dhan / Shoonya)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#8b949e;fontSize=13;fontFamily=Segoe UI;" vertex="1">
+          <mxGeometry x="400" y="70" width="900" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="c_l1" parent="1" value="1. PRESENTATION &amp; INTERACTION LAYER" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#1f6feb;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#58a6ff;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="50" y="120" width="1180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_web" parent="1" value="&lt;b&gt;React 19 Web Dashboard&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Vite + Tailwind + ECharts&lt;br/&gt;Options Lab, Alpha Zoo, Portfolio&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#388bfd;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="80" y="160" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_cli" parent="1" value="&lt;b&gt;Interactive TUI / CLI&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Prompt Divider, Activity Rail&lt;br/&gt;/goal, /screen, /connector, /halt&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#388bfd;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="350" y="160" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_api" parent="1" value="&lt;b&gt;FastAPI Server&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;api_server.py (Port 8000)&lt;br/&gt;REST Endpoints + SSE Streams&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#388bfd;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="620" y="160" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_mcp" parent="1" value="&lt;b&gt;Model Context Protocol (MCP)&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;mcp_server.py&lt;br/&gt;Direct Claude &amp; Agent Integration&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#388bfd;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="890" y="160" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c_chan" parent="1" value="COMMUNICATION &amp; ALERTS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#388bfd;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#79c0ff;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="1260" y="120" width="460" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="ch_tg" parent="1" value="&lt;b&gt;Telegram Channel Bot&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Signal Alerts, PnL summaries, In-flight Status&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="1290" y="170" width="400" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ch_wa" parent="1" value="&lt;b&gt;WhatsApp Webhook Bot&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Urgent trade approvals, stop-loss notices&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="1290" y="240" width="400" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ch_mail" parent="1" value="&lt;b&gt;Email Dispatcher &amp; PDF&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Daily Tearsheets, Backtest HTML/PDF exports&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="1290" y="310" width="400" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ch_slack" parent="1" value="&lt;b&gt;Slack / Discord Webhooks&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;System uptime, execution logs &amp; risk alerts&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="1290" y="380" width="400" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ch_note" parent="1" value="&lt;font color=&quot;#3fb950&quot;&gt;&lt;b&gt;Cleaned &amp; Noise-Free:&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;All Chinese IMs (WeChat, DingTalk, Feishu, QQ) removed.&lt;br/&gt;Only global &amp; India-ready messaging maintained.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#161b22;strokeColor=#30363d;fontColor=#8b949e;fontSize=11;align=center;" vertex="1">
+          <mxGeometry x="1290" y="450" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_l2" parent="1" value="2. MULTI-AGENT ORCHESTRATION &amp; REASONING CORE" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#8957e5;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#bc8cff;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="50" y="280" width="1180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ag_loop" parent="1" value="&lt;b&gt;ReAct Reasoning Core&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;loop.py + context.py&lt;br/&gt;5-Layer Token Compression&lt;br/&gt;Read/Write Tool Batching&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="80" y="325" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ag_swarm" parent="1" value="&lt;b&gt;Multi-Agent Swarm DAG&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Worker Pool &amp; Committees&lt;br/&gt;Equity, Options, Pairs &amp; Risk Desks&lt;br/&gt;Isolated Artifacts &amp; Retry Control&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="350" y="325" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ag_memory" parent="1" value="&lt;b&gt;Memory &amp; Session Hierarchy&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;persistent.py + SQLite / FTS5&lt;br/&gt;Cross-session Trade History&lt;br/&gt;Auto-recall of Trader Preferences&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="630" y="325" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ag_llm" parent="1" value="&lt;b&gt;Multi-LLM Gateway&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Anthropic Claude 3.7 / 3.5&lt;br/&gt;OpenAI GPT-4o / O3-Mini&lt;br/&gt;DeepSeek R1 / V3, Ollama (Local)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="910" y="325" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_l3" parent="1" value="3. QUANT STRATEGY, ALPHA ZOO &amp; DERIVATIVES" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#238636;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#3fb950;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="50" y="480" width="1180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="q_zoo" parent="1" value="&lt;b&gt;Alpha Zoo (462 Formulas)&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;GTJA191 (191) + Alpha101 (101)&lt;br/&gt;Qlib158 (154) + Academic (12)&lt;br/&gt;19 Fast AST Tensor Operators&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="80" y="525" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q_opt" parent="1" value="&lt;b&gt;Indian Options Lab (F&amp;O)&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;NIFTY, BANKNIFTY, FINNIFTY&lt;br/&gt;Black-Scholes Greek Engine&lt;br/&gt;PCR, IV Skew, Max Pain, Spreads&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="360" y="525" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q_engine" parent="1" value="&lt;b&gt;Backtest &amp; Risk Analytics&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Walkforward &amp; Vectorized Engine&lt;br/&gt;XIRR, Sharpe, Sortino, Calmar&lt;br/&gt;Maximum Drawdown &amp; Kelly Sizing&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="650" y="525" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q_mvo" parent="1" value="&lt;b&gt;Portfolio Optimizers&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Mean-Variance (MVO)&lt;br/&gt;Hierarchical Risk Parity (HRP)&lt;br/&gt;Equal Vol &amp; Max Diversification&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="940" y="525" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_l4" parent="1" value="4. INDIAN MARKET DATA ROUTING &amp; INGESTION" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#bd561d;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#f0883e;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="50" y="680" width="1180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="md_route" parent="1" value="&lt;b&gt;Market Data Router&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;src/market_data.py&lt;br/&gt;Automated Suffix &amp; Symbol Parsing&lt;br/&gt;Fallback Priority Chain&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="80" y="725" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="md_nse_bse" parent="1" value="&lt;b&gt;NSE &amp; BSE Equity Ingestion&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Reliance.NS, TCS.NS, HDFCBANK.NS&lt;br/&gt;^NSEI (Nifty 50), ^BSESN (Sensex)&lt;br/&gt;Source: Yahoo Finance / yfinance&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="360" y="725" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="md_broker_data" parent="1" value="&lt;b&gt;Indian Broker Data Loader&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;backtest/loaders/india_broker_loader.py&lt;br/&gt;Direct Tick &amp; Intraday Minute Bars&lt;br/&gt;Real-time Quotes from Kite / Dhan&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="650" y="725" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="md_local" parent="1" value="&lt;b&gt;Local Historical Data Store&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;local_loader.py&lt;br/&gt;Parquet &amp; CSV Data Dumps&lt;br/&gt;Offline High-Speed Backtests&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="940" y="725" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_l5" parent="1" value="5. EXECUTION ENGINE &amp; INDIAN BROKER CONNECTORS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#9e6a03;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#d29922;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="50" y="880" width="1180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="brk_zerodha" parent="1" value="&lt;b&gt;Zerodha (Kite Connect)&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#3fb950&quot;&gt;&lt;b&gt;Default Primary Connector&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Kite API v3, TOTP Auto-auth&lt;br/&gt;CNC / MIS / NRML Orders&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#d29922;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="80" y="925" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="brk_dhan" parent="1" value="&lt;b&gt;Dhan (DhanHQ v2)&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Direct Superfast F&amp;O API&lt;br/&gt;Options Greeks &amp; Basket Orders&lt;br/&gt;Instant Margin Computation&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#d29922;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="360" y="925" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="brk_shoonya" parent="1" value="&lt;b&gt;Shoonya (Finvasia)&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Zero Brokerage API Connector&lt;br/&gt;Native Python SDK Client&lt;br/&gt;Multi-leg Strategy Execution&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#d29922;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="650" y="925" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="brk_guard" parent="1" value="&lt;b&gt;Risk Guard &amp; Kill Switch&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;#f85149&quot;&gt;&lt;b&gt;Global /halt System&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8b949e&quot;&gt;Max Loss Stop, Order Size Caps&lt;br/&gt;Paper Trading Mode Simulator&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#21262d;strokeColor=#f85149;strokeWidth=1.5;fontColor=#e6edf3;fontSize=12;fontFamily=Segoe UI;align=center;verticalAlign=middle;shadow=0;" vertex="1">
+          <mxGeometry x="940" y="925" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_clean" parent="1" value="CLEANUP &amp; NOISE ELIMINATION AUDIT" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#161b22;strokeColor=#30363d;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#58a6ff;fontStyle=1;fontSize=14;" vertex="1">
+          <mxGeometry x="1260" y="560" width="460" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="audit_box" parent="1" value="&lt;div style='line-height:1.6; font-family: Segoe UI, sans-serif; font-size:12px; color:#c9d1d9;'&gt;&lt;p&gt;&lt;b style='color:#3fb950;'&gt;✔ 100% Indian Market Specialization:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Equities:&lt;/b&gt; NSE (.NS) and BSE (.BO)&lt;/li&gt;&lt;li&gt;&lt;b&gt;Indices:&lt;/b&gt; Nifty 50 (^NSEI), Bank Nifty (^NSEBANK), Sensex (^BSESN)&lt;/li&gt;&lt;li&gt;&lt;b&gt;Derivatives:&lt;/b&gt; Weekly/Monthly Index &amp; Stock Options&lt;/li&gt;&lt;li&gt;&lt;b&gt;ADRs:&lt;/b&gt; INFY.US, WIT.US, HDB.US, IBN.US&lt;/li&gt;&lt;/ul&gt;&lt;hr style='border:0; border-top:1px solid #30363d;'/&gt;&lt;p&gt;&lt;b style='color:#f85149;'&gt;✖ 0% Foreign Market Clutter:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Purged 18 Foreign Brokers:&lt;/b&gt; Alpaca, Binance, eToro, Futu, IBKR, KIS, Longbridge, MT5, OKX, Robinhood, Tiger, Toss, Upbit, etc.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Purged 24 Foreign Loaders:&lt;/b&gt; Tushare, Baostock, Eastmoney, Sina, Tencent, Pykrx, Gildata, etc.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Purged Unused Channels:&lt;/b&gt; WeChat, DingTalk, Feishu, QQ, Matrix, Mochat, MSTeams&lt;/li&gt;&lt;li&gt;&lt;b&gt;Cleaned UI Locales:&lt;/b&gt; Removed 8 foreign languages; clean single-language English UI&lt;/li&gt;&lt;/ul&gt;&lt;hr style='border:0; border-top:1px solid #30363d;'/&gt;&lt;p&gt;&lt;b style='color:#d29922;'&gt;⚡ Performance &amp; Reliability:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Single-Commit Fresh History in GitHub&lt;/li&gt;&lt;li&gt;Zero Token Bloat from Foreign Tool Declarations&lt;/li&gt;&lt;li&gt;100% Quant Math &amp; Alpha Formulas Preserved&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0d1117;strokeColor=#21262d;align=left;verticalAlign=top;spacing=12;" vertex="1">
+          <mxGeometry x="1280" y="600" width="420" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" source="ui_web" target="srv_api" value="REST / SSE" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#58a6ff;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" source="ui_cli" target="srv_api" value="CLI Loop" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#58a6ff;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" source="srv_api" target="ag_loop" value="Session Prompt" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" source="ag_loop" target="ag_swarm" value="DAG Delegations" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" parent="1" source="ag_loop" target="ag_memory" value="FTS5 Read/Write" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" parent="1" source="ag_loop" target="ag_llm" value="Completion / Tool Call" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#a371f7;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" parent="1" source="ag_loop" target="q_zoo" value="Factor Evaluation" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" parent="1" source="ag_loop" target="q_opt" value="F&amp;O Greek Math" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" parent="1" source="q_zoo" target="q_engine" value="Signals -&gt; Backtest" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" parent="1" source="q_opt" target="q_mvo" value="Delta/Risk Sizing" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3fb950;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" parent="1" source="q_engine" target="md_route" value="Request Bars" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" parent="1" source="md_route" target="md_nse_bse" value=".NS / .BO Tickers" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" parent="1" source="md_route" target="md_broker_data" value="Live Feeds" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" parent="1" source="md_route" target="md_local" value="Parquet Cache" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f0883e;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" parent="1" source="ag_loop" target="brk_guard" value="Pre-Trade Checks" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d29922;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="860" />
+              <mxPoint x="1060" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" parent="1" source="brk_guard" target="brk_zerodha" value="Approved CNC/MIS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d29922;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" parent="1" source="brk_guard" target="brk_dhan" value="Approved F&amp;O Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d29922;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" parent="1" source="brk_guard" target="brk_shoonya" value="Zero-Brokerage Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d29922;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" parent="1" source="ag_loop" target="ch_tg" value="Dispatches Signals" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#58a6ff;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="340" />
+              <mxPoint x="1220" y="340" />
+              <mxPoint x="1220" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" parent="1" source="brk_guard" target="ch_wa" value="Urgent Fill / Halt Alerts" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#58a6ff;strokeWidth=1.5;fontColor=#8b949e;fontSize=10;labelBackgroundColor=#0d1117;" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="880" />
+              <mxPoint x="1230" y="880" />
+              <mxPoint x="1230" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
